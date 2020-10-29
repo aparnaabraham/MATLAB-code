@@ -1,0 +1,17 @@
+clear all;
+close all;
+clc;
+N=5;
+n=0:0.1:N;
+y=exp(n);
+subplot(2,1,1);
+plot(n,y);
+ylabel('amplitude');
+xlabel('time--->');
+title('continuous exp signal');
+subplot(2,1,2);
+stem(n,y);
+ylabel('amplitude');
+xlabel('number of samples--->');
+title('discrete exp signal');
+display(y);
