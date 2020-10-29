@@ -1,0 +1,18 @@
+clear all;
+close all;
+clc;
+N=10;
+n=0:1:N-1;
+a=input('enter the amplitude factor');
+y=a*n;
+subplot(2,1,1);
+plot(n,y);
+ylabel('amplitude');
+xlabel('time--->');
+title('continuous ramp signal');
+subplot(2,1,2);
+stem(n,y);
+ylabel('amplitude');
+xlabel('number of samples--->');
+title('discrete ramp signal');
+display(y);
