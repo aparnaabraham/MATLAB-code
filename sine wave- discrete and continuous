@@ -1,0 +1,17 @@
+clc;
+clear all;
+close all;
+t = 0:0.01:1;
+f = 1;
+a = 2;
+y = a*sin(2*pi*f*t);
+subplot (2,1,1)
+plot(t,y);
+title('continuous sine wave');
+xlabel('time');
+ylabel('amplitude');
+subplot(2,1,2);
+stem(t,y);
+title('discete sine wave');
+xlabel('time');
+ylabel('amp
